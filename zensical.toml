@@ -40,13 +40,18 @@ features = [
     "search.highlight",
 ]
 
-# palety kolorów (ciemna jako domyślna)
+# paleta kolorów (tryb ciemny/jasny)
 [[project.theme.palette]]
+primary = "indigo"
+accent = "indigo"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Przełącz na tryb jasny"
 
 [[project.theme.palette]]
+primary = "indigo"
+accent = "indigo"
+media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Przełącz na tryb ciemny"
