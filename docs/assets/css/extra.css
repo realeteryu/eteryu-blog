@@ -1,14 +1,10 @@
-/* układ */
+/* węższa kolumna treści dla lepszej czytelności */
 .md-grid {
     max-width: 84%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
-.md-content__inner {
-    padding: 1.5rem 2rem; /* marginesy mobilne */
-}
-
-/* typografia */
+/* poprawki typografii treści */
 .md-typeset p {
     line-height: 1.75;
     margin-bottom: 1.5em;
@@ -36,7 +32,6 @@
     opacity: 0.8;
 }
 
-/* cytaty */
 .md-typeset blockquote {
     border-left: 4px solid #5c6bc0;
     background-color: rgba(92, 107, 192, 0.1);
@@ -51,7 +46,6 @@
     margin-bottom: 0;
 }
 
-/* zaznaczenie */
 .md-typeset ::selection {
     background-color: #5c6bc0;
     color: #ffffff;
