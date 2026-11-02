@@ -95,7 +95,29 @@
     color: #ffffff;
 }
 
-/* stopka nawigacji */
+/* karty w katalogu (statyczne, klikalny tylko link) */
+.md-typeset .grid.cards > ul > li {
+    transition: none !important;
+    cursor: default; /* Kursor nie zmienia się na łapkę nad całą kartą */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ul > li:active,
+.md-typeset .grid.cards > ul > li:focus,
+.md-typeset .grid.cards > ul > li:focus-within {
+    border-color: var(--md-default-fg-color--lightest) !important;
+    background-color: transparent !important;
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.md-typeset .grid.cards > ul > li a {
+    cursor: pointer; /* Łapka pojawia się tylko nad linkiem */
+}
+
+/* stopka nawigacji (tytuły wpisów) */
 .md-footer__link {
     display: flex;
     align-items: center;
@@ -133,15 +155,13 @@
     white-space: nowrap;
 }
 
-/* WYMUSZENIE TYTUŁU POPRZEDNIEGO WPISU NA MOBILE */
+/* wymuszenie tytułu poprzedniego wpisu na mobile */
 @media screen and (max-width: 768px) {
-    /* Nadpisanie display: none dla tytułu poprzedniej strony */
     .md-footer__link--prev .md-footer__title,
     .md-footer-nav__link--prev .md-footer-nav__title {
         display: flex !important;
     }
     
-    /* Zwiększenie szerokości obu sekcji stopki na mobile do 50/50 */
     .md-footer__link--prev,
     .md-footer-nav__link--prev {
         width: 50% !important;
@@ -151,14 +171,4 @@
     .md-footer-nav__link--next {
         width: 50% !important;
     }
-}
-
-/* karty w katalogu (utrzymanie obrysu po kliknięciu) */
-.md-typeset .grid.cards > ul > li:focus,
-.md-typeset .grid.cards > ul > li:focus-within,
-.md-typeset .grid.cards > ul > li:active {
-    border-color: var(--md-accent-fg-color) !important;
-    outline: 2px solid var(--md-accent-fg-color) !important;
-    outline-offset: 2px;
-    box-shadow: 0 0 0.4rem var(--md-accent-fg-color) !important;
 }
