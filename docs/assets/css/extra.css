@@ -1,9 +1,9 @@
-/* węższa kolumna treści dla lepszej czytelności */
+/* układ i typografia tekstu (z distrust.pl) */
 .md-grid {
     max-width: 84%;
+    margin: 0 auto;
 }
 
-/* poprawki typografii treści */
 .md-typeset p {
     line-height: 1.75;
     margin-bottom: 1.5em;
@@ -48,4 +48,93 @@
 .md-typeset ::selection {
     background-color: #5c6bc0;
     color: #ffffff;
+}
+
+/* kolorystyka i tło (z Eteryu.space) */
+[data-md-color-scheme="slate"] {
+    --md-hue: 232;
+    --md-default-bg-color: hsla(var(--md-hue), 15%, 12%, 1);
+    --md-default-bg-color--light: hsla(var(--md-hue), 15%, 12%, 0.54);
+    --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 12%, 0.26);
+    --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 12%, 0.08);
+    --md-default-fg-color: hsla(var(--md-hue), 15%, 95%, 0.96);
+    --md-default-fg-color--light: hsla(var(--md-hue), 15%, 95%, 0.80);
+    --md-default-fg-color--lighter: hsla(var(--md-hue), 15%, 95%, 0.48);
+    --md-default-fg-color--lightest: hsla(var(--md-hue), 15%, 95%, 0.20);
+}
+
+body {
+    --md-typeset-a-color: var(--md-accent-fg-color) !important;
+}
+
+/* header (z Eteryu.space) */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: hsla(var(--md-hue), 15%, 9%, 1);
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+[data-md-color-scheme="default"] .md-header {
+    background-color: white;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    color: black;
+}
+
+.md-header__inner {
+    min-height: 5.6rem;
+}
+
+.md-typeset :target {
+    --md-scroll-margin: 6rem;
+}
+
+.md-header__ellipsis {
+    position: relative;
+}
+
+.md-header__ellipsis::after {
+    content: "Blog o cyfrowej higienie, prywatności i bezpieczeństwie.";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 0.65rem;
+    font-weight: 400;
+    line-height: 1;
+    opacity: 0.65;
+    margin-top: 0.3rem;
+    white-space: nowrap;
+}
+
+.md-header__button.md-logo {
+    display: none !important;
+}
+
+/* footer (z Eteryu.space) */
+[data-md-color-scheme="slate"] .md-footer {
+    border-top: 1px solid var(--md-default-bg-color--lighter);
+    background-color: hsla(var(--md-hue), 15%, 9%, 1);
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+    background-color: hsla(var(--md-hue), 15%, 7%, 1);
+}
+
+.md-footer__link {
+    margin-bottom: 0 !important;
+    margin-top: 0.2rem !important;
+}
+
+.md-copyright {
+    padding: 0.4rem 0 0.5rem 0 !important;
+    font-size: 0.65rem !important;
+}
+
+.md-social {
+    padding: 0 0 0.75rem 0 !important;
+}
+
+.md-copyright__highlight {
+    font-size: 0.55rem !important;
+    color: var(--md-footer-fg-color--lighter) !important;
 }
