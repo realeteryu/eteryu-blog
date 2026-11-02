@@ -93,3 +93,19 @@
     background-color: #5c6bc0;
     color: #ffffff;
 }
+
+/* zmiana tekstu w stopce nawigacji */
+.md-footer__link--next .md-footer__direction,
+.md-footer__link--prev .md-footer__direction {
+    font-size: 0 !important;
+}
+
+.md-footer__link--next .md-footer__direction::after {
+    content: "Kolejny wpis";
+    font-size: 0.64rem;
+}
+
+.md-footer__link--prev .md-footer__direction::after {
+    content: "Poprzedni wpis";
+    font-size: 0.64rem;
+}
