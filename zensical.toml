@@ -17,6 +17,9 @@ nav = [
 variant = "modern"
 language = "pl"
 
+# podpięcie własnego css
+extra_css = ["assets/css/extra.css"]
+
 features = [
     "announce.dismiss",
     "content.code.annotate",
@@ -46,6 +49,10 @@ toggle.name = "Przełącz na tryb ciemny"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Przełącz na tryb jasny"
+
+# ustawienia dodatkowe
+[project.extra]
+generator = false
 
 # rozszerzenia markdown
 [project.markdown_extensions.abbr]
