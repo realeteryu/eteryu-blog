@@ -96,16 +96,12 @@
 }
 
 /* karty w katalogu (statyczne, klikalny tylko link) */
-.md-typeset .grid.cards > ul > li {
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > :is(ul, ol) > li {
     transition: none !important;
-    cursor: default; /* Kursor nie zmienia się na łapkę nad całą kartą */
-    -webkit-tap-highlight-color: transparent;
-}
-
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid.cards > ul > li:active,
-.md-typeset .grid.cards > ul > li:focus,
-.md-typeset .grid.cards > ul > li:focus-within {
+    cursor: default !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
     border-color: var(--md-default-fg-color--lightest) !important;
     background-color: transparent !important;
     transform: none !important;
@@ -113,8 +109,45 @@
     outline: none !important;
 }
 
-.md-typeset .grid.cards > ul > li a {
-    cursor: pointer; /* Łapka pojawia się tylko nad linkiem */
+/* neutralizacja wszelkich stanów interaktywnych na całej karcie */
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ul > li:active,
+.md-typeset .grid.cards > ul > li:focus,
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid.cards > ul > li:focus-visible,
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid.cards > :is(ul, ol) > li:active,
+.md-typeset .grid.cards > :is(ul, ol) > li:focus,
+.md-typeset .grid.cards > :is(ul, ol) > li:focus-within,
+.md-typeset .grid.cards > :is(ul, ol) > li:focus-visible {
+    transition: none !important;
+    cursor: default !important;
+    -webkit-tap-highlight-color: transparent !important;
+    border-color: var(--md-default-fg-color--lightest) !important;
+    background-color: transparent !important;
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* wyłączenie pseudoelementów typu "stretched link" (niewidzialna nakładka na całą kartę) */
+.md-typeset .grid.cards > ul > li a::before,
+.md-typeset .grid.cards > ul > li a::after,
+.md-typeset .grid.cards > :is(ul, ol) > li a::before,
+.md-typeset .grid.cards > :is(ul, ol) > li a::after {
+    content: none !important;
+    display: none !important;
+    position: static !important;
+    inset: auto !important;
+}
+
+/* tylko sam link w karcie jest klikalny i ma kursor łapki */
+.md-typeset .grid.cards > ul > li a,
+.md-typeset .grid.cards > :is(ul, ol) > li a {
+    cursor: pointer !important;
+    position: relative;
+    z-index: 1;
+    -webkit-tap-highlight-color: auto !important;
 }
 
 /* stopka nawigacji (tytuły wpisów) */
