@@ -95,27 +95,49 @@
 }
 
 /* stopka nawigacji */
+.md-footer__link {
+    display: flex;
+    align-items: center;
+}
+
 .md-footer__title {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Oddech między etykietą a tytułem artykułu */
+    gap: 0.5rem; 
+    flex: 1; /* Zapobiega zapadaniu się tekstu do zera */
+    white-space: normal !important; /* Wymusza zawijanie, a nie ukrywanie */
 }
 
 .md-footer__direction {
-    font-size: 0 !important; /* Ukrywa oryginalny tekst */
+    font-size: 0 !important; 
     display: block !important;
+    visibility: visible !important;
 }
 
 .md-footer__link--next .md-footer__direction::after {
     content: "Kolejny wpis";
     font-size: 0.65rem;
-    color: var(--md-default-fg-color--light); /* Przywraca kolor etykiety */
-    display: block;
+    color: var(--md-default-fg-color--light);
+    display: block !important;
+    visibility: visible !important;
+    white-space: nowrap;
 }
 
 .md-footer__link--prev .md-footer__direction::after {
     content: "Poprzedni wpis";
     font-size: 0.65rem;
     color: var(--md-default-fg-color--light);
-    display: block;
+    display: block !important;
+    visibility: visible !important;
+    white-space: nowrap;
+}
+
+/* karty w katalogu (utrzymanie obrysu po kliknięciu) */
+.md-typeset .grid.cards > ul > li:focus,
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid.cards > ul > li:active {
+    border-color: var(--md-accent-fg-color) !important;
+    outline: 2px solid var(--md-accent-fg-color) !important;
+    outline-offset: 2px;
+    box-shadow: 0 0 0.4rem var(--md-accent-fg-color) !important;
 }
