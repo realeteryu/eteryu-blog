@@ -39,20 +39,26 @@ features = [
     "search.highlight",
 ]
 
-# palety kolorów
-[[project.theme.palette]]
-scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Przełącz na tryb ciemny"
-
+# palety kolorów (ciemna jako domyślna)
 [[project.theme.palette]]
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Przełącz na tryb jasny"
 
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Przełącz na tryb ciemny"
+
 # ustawienia dodatkowe
 [project.extra]
 generator = false
+
+# linki społecznościowe
+[[project.extra.social]]
+icon = "fontawesome/brands/mastodon"
+link = "https://infosec.exchange/@eteryu"
+name = "Mastodon"
 
 # rozszerzenia markdown
 [project.markdown_extensions.abbr]
