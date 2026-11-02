@@ -94,21 +94,28 @@
     color: #ffffff;
 }
 
-/* zmiana tekstu w stopce nawigacji */
+/* zmiana tekstu i odstępów w stopce nawigacji */
 .md-footer__link--next .md-footer__direction,
 .md-footer__link--prev .md-footer__direction {
     font-size: 0 !important;
-    margin-bottom: 0.5rem !important; /* dodaje oddech pod etykietą */
+    margin-bottom: 0.8rem !important; /* Zwiększony oddech pod etykietą */
 }
 
 .md-footer__link--next .md-footer__direction::after {
     content: "Kolejny wpis";
     font-size: 0.64rem;
-    display: block; /* wymusza działanie marginesu */
+    display: block;
+    line-height: 1;
 }
 
 .md-footer__link--prev .md-footer__direction::after {
     content: "Poprzedni wpis";
     font-size: 0.64rem;
     display: block;
+    line-height: 1;
+}
+
+/* dodatkowy odstęp dla samego tytułu artykułu w stopce */
+.md-footer__title {
+    margin-top: 0.2rem;
 }
