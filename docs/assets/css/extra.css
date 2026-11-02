@@ -1,0 +1,77 @@
+/* układ */
+.md-grid {
+    max-width: 75rem;
+}
+
+.md-content__inner {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+/* typografia */
+.md-typeset p {
+    line-height: 1.75;
+    margin-bottom: 1.5em;
+}
+
+.md-typeset h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.md-typeset h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.md-typeset a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.md-typeset a:hover {
+    opacity: 0.8;
+}
+
+/* cytaty */
+.md-typeset blockquote {
+    border-left: 4px solid #5c6bc0;
+    background-color: rgba(92, 107, 192, 0.1);
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+}
+
+.md-typeset blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* zaznaczenie */
+.md-typeset ::selection {
+    background-color: #5c6bc0;
+    color: #ffffff;
+}
+
+/* logo i nawigacja */
+.md-nav__title[for="__drawer"] {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.md-nav__title[for="__drawer"] .md-logo {
+    margin-right: 0.85rem !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    transform: translateY(-2px); 
+}
+
+.md-header__button.md-logo img {
+    height: 2rem !important;
+    width: auto !important;
+}
