@@ -94,28 +94,28 @@
     color: #ffffff;
 }
 
-/* zmiana tekstu i odstępów w stopce nawigacji */
-.md-footer__link--next .md-footer__direction,
-.md-footer__link--prev .md-footer__direction {
-    font-size: 0 !important;
-    margin-bottom: 0.8rem !important; /* Zwiększony oddech pod etykietą */
+/* stopka nawigacji */
+.md-footer__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Oddech między etykietą a tytułem artykułu */
+}
+
+.md-footer__direction {
+    font-size: 0 !important; /* Ukrywa oryginalny tekst */
+    display: block !important;
 }
 
 .md-footer__link--next .md-footer__direction::after {
     content: "Kolejny wpis";
-    font-size: 0.64rem;
+    font-size: 0.65rem;
+    color: var(--md-default-fg-color--light); /* Przywraca kolor etykiety */
     display: block;
-    line-height: 1;
 }
 
 .md-footer__link--prev .md-footer__direction::after {
     content: "Poprzedni wpis";
-    font-size: 0.64rem;
+    font-size: 0.65rem;
+    color: var(--md-default-fg-color--light);
     display: block;
-    line-height: 1;
-}
-
-/* dodatkowy odstęp dla samego tytułu artykułu w stopce */
-.md-footer__title {
-    margin-top: 0.2rem;
 }
