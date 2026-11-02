@@ -45,6 +45,7 @@
 /* węższa kolumna treści dla lepszej czytelności */
 .md-grid {
     max-width: 84%;
+    margin: 0 auto;
 }
 
 /* poprawki typografii treści */
@@ -104,8 +105,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem; 
-    flex: 1; /* Zapobiega zapadaniu się tekstu do zera */
-    white-space: normal !important; /* Wymusza zawijanie, a nie ukrywanie */
+    flex: 1;
+    white-space: normal !important;
 }
 
 .md-footer__direction {
@@ -130,6 +131,26 @@
     display: block !important;
     visibility: visible !important;
     white-space: nowrap;
+}
+
+/* WYMUSZENIE TYTUŁU POPRZEDNIEGO WPISU NA MOBILE */
+@media screen and (max-width: 768px) {
+    /* Nadpisanie display: none dla tytułu poprzedniej strony */
+    .md-footer__link--prev .md-footer__title,
+    .md-footer-nav__link--prev .md-footer-nav__title {
+        display: flex !important;
+    }
+    
+    /* Zwiększenie szerokości obu sekcji stopki na mobile do 50/50 */
+    .md-footer__link--prev,
+    .md-footer-nav__link--prev {
+        width: 50% !important;
+    }
+    
+    .md-footer__link--next,
+    .md-footer-nav__link--next {
+        width: 50% !important;
+    }
 }
 
 /* karty w katalogu (utrzymanie obrysu po kliknięciu) */
