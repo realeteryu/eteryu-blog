@@ -4,7 +4,7 @@ site_name = "Eteryu"
 site_description = "Blog o cyfrowej higienie, prywatności i bezpieczeństwie."
 site_author = "Eteryu"
 site_url = "https://realeteryu.github.io/eteryu-blog/"
-copyright = """Copyright &copy; 2026 Eteryu"""
+copyright = """Copyright &copy; 2026 Eteryu · Blog o cyfrowej higienie<br>Treść na licencji <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>"""
 
 # podpięcie własnego css
 extra_css = ["assets/css/extra.css"]
@@ -62,9 +62,19 @@ generator = false
 
 # linki społecznościowe
 [[project.extra.social]]
+icon = "fontawesome/solid/rss"
+link = "/feed_rss_created.xml"
+name = "Kanał RSS"
+
+[[project.extra.social]]
 icon = "fontawesome/brands/mastodon"
 link = "https://infosec.exchange/@eteryu"
 name = "Mastodon"
+
+[[project.extra.social]]
+icon = "fontawesome/solid/link"
+link = "https://distrust.pl"
+name = "Distrust"
 
 # rozszerzenia markdown
 [project.markdown_extensions.abbr]
@@ -109,3 +119,9 @@ custom_checkbox = true
 blog_dir = "."
 post_url_format = "{slug}"
 pagination_per_page = 10
+
+# kanał rss
+[project.plugins.rss]
+match_path = "posts/.*"
+abstract_chars_count = -1
+date_from_meta = { as_creation = "date" }
