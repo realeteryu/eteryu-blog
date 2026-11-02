@@ -6,6 +6,9 @@ site_author = "Eteryu"
 site_url = "https://realeteryu.github.io/eteryu-blog/"
 copyright = """Copyright &copy; 2026 Eteryu"""
 
+# podpięcie własnego css
+extra_css = ["assets/css/extra.css"]
+
 # nawigacja
 nav = [
     { "Start" = "index.md" },
@@ -16,9 +19,6 @@ nav = [
 [project.theme]
 variant = "modern"
 language = "pl"
-
-# podpięcie własnego css
-extra_css = ["assets/css/extra.css"]
 
 features = [
     "announce.dismiss",
