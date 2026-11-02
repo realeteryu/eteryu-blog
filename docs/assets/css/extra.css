@@ -1,12 +1,11 @@
 /* układ */
 .md-grid {
-    max-width: 75rem;
+    max-width: 84%;
+    margin: 0 auto;
 }
 
 .md-content__inner {
-    max-width: 50rem;
-    margin: 0 auto;
-    padding-bottom: 4rem;
+    padding: 1.5rem 2rem; /* marginesy mobilne */
 }
 
 /* typografia */
@@ -45,6 +44,7 @@
     margin: 2rem 0;
     border-radius: 0 4px 4px 0;
     font-style: italic;
+    color: #d1d5db;
 }
 
 .md-typeset blockquote p:last-child {
@@ -55,23 +55,4 @@
 .md-typeset ::selection {
     background-color: #5c6bc0;
     color: #ffffff;
-}
-
-/* logo i nawigacja */
-.md-nav__title[for="__drawer"] {
-    display: flex !important;
-    align-items: center !important;
-}
-
-.md-nav__title[for="__drawer"] .md-logo {
-    margin-right: 0.85rem !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    transform: translateY(-2px); 
-}
-
-.md-header__button.md-logo img {
-    height: 2rem !important;
-    width: auto !important;
 }
