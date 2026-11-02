@@ -5,9 +5,7 @@ authors:
   - eteryu
 ---
 
-# Jak okiełznałem system z MDM. Moja droga do GrapheneOS
-
-W świecie cyberbezpieczeństwa często rozmawiamy o „modelach zagrożeń” (Threat Models) w sposób czysto teoretyczny. Analizujemy tabelki, czytamy dokumentację i zastanawiamy się, czy korporacyjny szum telemetryczny to wystarczający powód do zmiany nawyków. Sam byłem w tym miejscu, budując swój poprzedni setup na iPhonie 17 Pro. Wszystko zmieniło się w ułamku sekundy, gdy teoria zderzyła się z brutalną rzeczywistością.
+W świecie cyberbezpieczeństwa często rozmawiamy o „modelach zagrożeń” w sposób czysto teoretyczny. Sam byłem w tym miejscu, budując swój poprzedni setup na iPhonie 17 Pro. Wszystko zmieniło się w ułamku sekundy, gdy teoria zderzyła się z brutalną rzeczywistością.
 
 <!-- more -->
 
@@ -21,10 +19,10 @@ To był potwornie ciężki okres. Moja żona leżała w szpitalu, a telefon był
 
 Zaczęło się od drobnych anomalii, które szybko przerodziły się w techniczny koszmar:
 
-* **Aktywny podsłuch:** Na ekranie pojawiała się zielona ikona aktywnego mikrofonu, mimo że nie prowadziłem żadnej rozmowy ani nie używałem aplikacji dyktafonu.
-* **Zdalne sterowanie:** Telefon losowo wykonywał akcje, jakby ktoś sterował nim w czasie rzeczywistym.
-* **Manipulacja danymi:** Z systemowej galerii Google Photos zaczęły znikać pojedyncze zdjęcia i zrzuty ekranu.
-* **Intercepcja połączeń:** Zauważyłem bezpodstawne przekierowania moich połączeń przychodzących na obcy, nieznany numer.
+- **Aktywny podsłuch:** Na ekranie pojawiała się zielona ikona aktywnego mikrofonu, mimo że nie prowadziłem żadnej rozmowy ani nie używałem aplikacji dyktafonu.
+- **Zdalne sterowanie:** Telefon losowo wykonywał akcje, jakby ktoś sterował nim w czasie rzeczywistym.
+- **Manipulacja danymi:** Z systemowej galerii Google Photos zaczęły znikać pojedyncze zdjęcia i zrzuty ekranu.
+- **Intercepcja połączeń:** Zauważyłem bezpodstawne przekierowania moich połączeń przychodzących na obcy, nieznany numer.
 
 Najgorszy był efekt "migawki" — ekran zachowywał się tak, jakby ktoś robił zrzuty ekranu w locie. W warunkach skrajnego stresu rodzinnego, świadomość, że ktoś obcy patrzy na mój ekran i słucha mojego otoczenia, była paraliżująca.
 
@@ -34,8 +32,6 @@ Wiedziałem, że standardowy restart nic nie da. Wyłączyłem urządzenie i uru
 
 !!! danger "Urządzenie jest kontrolowane przez administratora..."
     Telefon posiadał ukryty, nadrzędny profil **MDM (Mobile Device Management)**. Ktoś sprzedał mi urządzenie korporacyjne jako czysty sprzęt konsumencki. Profil MDM dawał zdalnemu napastnikowi uprawnienia administracyjne wyższe niż moje własne. Mógł w locie podglądać ekran, aktywować sensory i manipulować routingiem połączeń.
-    
-    ![Systemowy komunikat o blokadzie i profilu MDM na systemie Android](https://i.postimg.cc/KvrXfSFp/p2i6euqh9irf1.png)
 
 Sprawę natychmiast zgłosiłem na Policję, a urządzenie zostało zakwalifikowane do zwrotu. Pojawił się jednak kluczowy problem: jak bezpiecznie przeczekać kilka dni, mając na telefonie krytyczne konta bankowe, mailowe i komunikatory, w dodatku bez możliwości odcięcia się od sieci ze względu na sytuację w szpitalu?
 
@@ -60,9 +56,9 @@ Po odesłaniu wadliwego urządzenia skontaktowałem się ze sprzedawcą. Sklep w
 
 Wgranie GrapheneOS całkowicie eliminuje ryzyko przetrwania ukrytych profilów korporacyjnych (dzięki mechanizmowi Verified Boot). Na tym systemie buduję swój obecny Threat Model, oparty na braku ślepego zaufania (Zero Trust):
 
-* **Całkowita de-googlizacja:** Profil główny jest całkowicie wolny od kodu Google (FOSS). Przestarzałego F-Droida zastąpiłem nowoczesnymi, bezpiecznymi menedżerami **Obtainium** i **Accrescent**.
-* **Ścisła izolacja (Multiple Profiles):** Wszystkie usługi komercyjne zamknąłem w odizolowanym, osobnym profilu użytkownika.
-* **Separacja sieciowa:** Ruch sieciowy obu profili jest całkowicie odseparowany przez niezależne instancje WireGuard w trybie Always-on.
+- **Całkowita de-googlizacja:** Profil główny jest całkowicie wolny od kodu Google (FOSS). Przestarzałego F-Droida zastąpiłem nowoczesnymi, bezpiecznymi menedżerami **Obtainium** i **Accrescent**.
+- **Ścisła izolacja (Multiple Profiles):** Wszystkie usługi komercyjne zamknąłem w odizolowanym, osobnym profilu użytkownika.
+- **Separacja sieciowa:** Ruch sieciowy obu profili jest całkowicie odseparowany przez niezależne instancje WireGuard w trybie Always-on.
 
 ## Wnioski na przyszłość
 
