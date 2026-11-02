@@ -11,7 +11,7 @@ extra_css = ["assets/css/extra.css"]
 
 # nawigacja
 nav = [
-    { "Start" = "index.md" },
+    { "Blog" = "index.md" },
     { "Markdown w 5 minut" = "markdown.md" },
 ]
 
