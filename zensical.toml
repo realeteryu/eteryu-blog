@@ -98,3 +98,9 @@ alternate_style = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
+
+# blog
+[project.plugins.blog]
+blog_dir = "."
+post_url_format = "{slug}"
+pagination_per_page = 10
