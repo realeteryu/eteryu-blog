@@ -19,6 +19,7 @@ nav = [
 [project.theme]
 variant = "modern"
 language = "pl"
+font = false
 
 features = [
     "announce.dismiss",
