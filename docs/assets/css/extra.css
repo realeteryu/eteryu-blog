@@ -98,14 +98,17 @@
 .md-footer__link--next .md-footer__direction,
 .md-footer__link--prev .md-footer__direction {
     font-size: 0 !important;
+    margin-bottom: 0.5rem !important; /* dodaje oddech pod etykietą */
 }
 
 .md-footer__link--next .md-footer__direction::after {
     content: "Kolejny wpis";
     font-size: 0.64rem;
+    display: block; /* wymusza działanie marginesu */
 }
 
 .md-footer__link--prev .md-footer__direction::after {
     content: "Poprzedni wpis";
     font-size: 0.64rem;
+    display: block;
 }
