@@ -7,6 +7,4 @@ hide:
   - navigation
 ---
 
-# Blog
-
-Zdrowy brak zaufania nie jest paranoją — jest rozsądkiem.
+# Zdrowy brak zaufania nie jest paranoją — jest rozsądkiem.
