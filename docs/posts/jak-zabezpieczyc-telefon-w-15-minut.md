@@ -13,8 +13,6 @@ Twoim przeciwnikiem są zautomatyzowane boty, wycieki z baz danych i masowe kamp
 
 Przejście przez te cztery kroki zajmuje dokładnie piętnaście minut. Wdróż je dzisiaj, wyrób w sobie prosty nawyk robienia kopii zapasowych i przestań martwić się o bezpieczeństwo swoich danych.
 
-![Polecane otwarte aplikacje: KeePassDX, Aegis, Obtainium, WireGuard](https://i.postimg.cc/Zn9BrT5m/Resized-Image-2026-08-28-05-47-11-7861.png)
-
 ## 1. Ewakuacja pamięci, czyli menedżer haseł (5 minut)
 
 Nigdy więcej nie używaj tego samego hasła w dwóch różnych miejscach. Ponowne użycie tego samego ciągu znaków to najczęstsza przyczyna przejęcia konta po wycieku danych z losowego sklepu internetowego. Rozwiązaniem jest bezpieczny menedżer haseł. Możesz założyć darmowe konto w sprawdzonym rozwiązaniu chmurowym (np. `Bitwarden`) lub zainstalować aplikację w pełni lokalną, która nie wysyła nigdzie danych (np. `KeePassDX`). 
@@ -52,17 +50,12 @@ Możesz instalować dziesiątki rozszerzeń blokujących reklamy w przeglądarce
     * Na urządzeniach z systemem **Android** wejdź w ustawienia systemowe i odszukaj opcję `Prywatny DNS` (zazwyczaj w zakładce *Sieć i internet*). Zamiast opcji automatycznej, wybierz ręczne wprowadzanie nazwy hosta, wpisz adres wybranego dostawcy i zapisz zmiany.
     * Na urządzeniach **Apple (iOS/macOS)** wejdź na stronę internetową wybranego dostawcy i pobierz z niej zaufany profil konfiguracyjny (Configuration Profile), który natywnie zmieni serwery w systemie.
 
-!!! tip "Ważne"
-    Zawsze polecam sprawdzone narzędzia, które zebrałem na mojej [liście /curated](https://eteryu.space/curated/). Jeśli chcesz wycinać reklamy, wpisz adres **`dns.adguard-dns.com`**. Aby agresywnie blokować złośliwe oprogramowanie, użyj **`dns.quad9.net`**. Purystom prywatności polecam serwery `Mullvad`, a osobom pragnącym pełnej kontroli świetnie sprawdzi się `NextDNS`.
-
 ## 4. Autopilot bezpieczeństwa i aktualizacje (2 minuty)
 
 Stare oprogramowanie to dziurawe oprogramowanie. Hakerzy nie muszą wymyślać nowych metod ataku, jeśli użytkownicy sami zapominają o łataniu znanych luk bezpieczeństwa. Włącz w ustawieniach systemu oraz sklepu z aplikacjami bezwarunkowe i automatyczne aktualizacje. Dla zdecydowanej większości użytkowników takie łatki to jedyna linia obrony przed atakami wykorzystującymi znane podatności. 
 
 !!! tip "Warto wiedzieć"
     Puryści cyfrowej higieny często zarządzają swoimi aplikacjami ręcznie i weryfikują sygnatury pobierając kod bezpośrednio z repozytoriów za pomocą narzędzi takich jak `Obtainium`. Jest to doskonała praktyka zapewniająca pełną suwerenność, ale wymaga ona rygorystycznej dyscypliny.
-
-![Interfejs aplikacji Obtainium do ręcznych aktualizacji](https://i.postimg.cc/VN39b85n/Resized-Image-2026-08-28-00-31-21-2689.png)
 
 !!! info "Kompromis"
     Na początku drogi z cyfrową higieną włączenie pełnej automatyzacji to po prostu konieczny i mądry kompromis, który ratuje nas przed własnym zapominalstwem.
