@@ -4,7 +4,7 @@ site_name = "Eteryu.space"
 site_description = "Blog o cyfrowej higienie, prywatności i bezpieczeństwie."
 site_author = "Eteryu"
 site_url = "https://realeteryu.github.io/eteryu-blog/"
-copyright = """Copyright &copy; 2026 Eteryu · Blog o cyfrowej higienie<br>Treść na licencji <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>"""
+copyright = """Copyright &copy; 2026 Eteryu · Blog o cyfrowej higienie<br>Treść na licencji <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a><br><a href="mailto:kontakt@distrust.pl">kontakt@distrust.pl</a>"""
 
 # podpięcie własnego css
 extra_css = ["assets/css/extra.css"]
