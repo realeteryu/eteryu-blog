@@ -7,9 +7,9 @@
   
   <!-- Ustawienie obrazka: domyślny lub przypisany do konkretnego wpisu -->
   {% if page.meta and page.meta.image %}
-    {% set og_image = config.site_url.rstrip('/') ~ '/' ~ page.meta.image %}
+    {% set og_image = config.site_url + page.meta.image %}
   {% else %}
-    {% set og_image = config.site_url.rstrip('/') ~ '/assets/social/og-image.png' %}
+    {% set og_image = config.site_url + 'assets/social/og-image.png' %}
   {% endif %}
 
   <meta property="og:type" content="article">
