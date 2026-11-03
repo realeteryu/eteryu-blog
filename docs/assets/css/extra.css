@@ -205,3 +205,8 @@
         width: 50% !important;
     }
 }
+
+/* ukrycie logo */
+.md-nav__title .md-logo {
+    display: none !important;
+}
