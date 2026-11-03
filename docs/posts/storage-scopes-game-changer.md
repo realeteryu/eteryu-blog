@@ -1,5 +1,5 @@
 ---
-title: "Poznaj GrapheneOS w praktyce. Dlaczego Storage Scopes to absolutny "game changer"?"
+title: "Poznaj GrapheneOS w praktyce. Dlaczego Storage Scopes to absolutny 'game changer'?"
 date: 2026-08-16
 authors:
   - eteryu
