@@ -210,3 +210,8 @@
 .md-nav__title .md-logo {
     display: none !important;
 }
+
+/* oddech pod metadanymi wpisu */
+.md-post__meta {
+    margin-bottom: 2.5rem !important;
+}
