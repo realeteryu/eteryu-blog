@@ -1,5 +1,5 @@
 ---
-title: Eteryu
+title: Blog
 description: Blog o cyfrowej higienie, prywatności i bezpieczeństwie.
 hide:
   - footer
