@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <!-- Tagi Open Graph -->
+  <!-- tagi open graph -->
   {% set og_title = page.title if page.title else config.site_name %}
   {% set og_description = page.meta.description if page.meta and page.meta.description else config.site_description %}
   
-  <!-- Ustawienie obrazka -->
+  <!-- ustawienie obrazka -->
   {% if page.meta and page.meta.image %}
     {% set og_image = config.site_url + page.meta.image %}
   {% else %}
@@ -18,7 +18,7 @@
   <meta property="og:description" content="{{ og_description }}">
   <meta property="og:url" content="{{ page.canonical_url }}">
   
-  <!-- Tagi dla obrazka Open Graph -->
+  <!-- tagi dla obrazka open graph -->
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:secure_url" content="{{ og_image }}">
   <meta property="og:image:type" content="image/png">
@@ -26,9 +26,12 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ og_title }}">
   
-  <!-- Karta Twittera (Mastodon też z tego korzysta) -->
+  <!-- karta twittera (mastodon też z tego korzysta) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_description }}">
   <meta name="twitter:image" content="{{ og_image }}">
+
+  <!-- analityka umami -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="dba8e743-af86-479c-981f-3f04a9c2d26e"></script>
 {% endblock %}
