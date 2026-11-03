@@ -20,6 +20,7 @@ nav = [
 variant = "modern"
 language = "pl"
 font = false
+logo = false
 
 features = [
     "announce.dismiss",
