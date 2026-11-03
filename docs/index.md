@@ -7,6 +7,6 @@ hide:
   - navigation
 ---
 
-# Eteryu
+# Blog
 
 Zdrowy brak zaufania nie jest paranoją — jest rozsądkiem.
