@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <!-- Tagi Open Graph dla podglądu linków -->
+  <!-- Tagi Open Graph -->
   {% set og_title = page.title if page.title else config.site_name %}
   {% set og_description = page.meta.description if page.meta and page.meta.description else config.site_description %}
   
-  <!-- Ustawienie obrazka: domyślny lub przypisany do konkretnego wpisu -->
+  <!-- Ustawienie obrazka -->
   {% if page.meta and page.meta.image %}
     {% set og_image = config.site_url + page.meta.image %}
   {% else %}
@@ -17,12 +17,16 @@
   <meta property="og:title" content="{{ og_title }}">
   <meta property="og:description" content="{{ og_description }}">
   <meta property="og:url" content="{{ page.canonical_url }}">
+  
+  <!-- Tagi dla obrazka Open Graph -->
   <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:secure_url" content="{{ og_image }}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ og_title }}">
   
-  <!-- Karta Twittera (opcjonalnie) -->
+  <!-- Karta Twittera (Mastodon też z tego korzysta) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_description }}">
