@@ -1,6 +1,6 @@
 # konfiguracja projektu
 [project]
-site_name = "Eteryu"
+site_name = "Eteryu.space"
 site_description = "Blog o cyfrowej higienie, prywatności i bezpieczeństwie."
 site_author = "Eteryu"
 site_url = "https://realeteryu.github.io/eteryu-blog/"
