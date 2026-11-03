@@ -18,6 +18,7 @@ nav = [
 # motyw
 [project.theme]
 variant = "modern"
+custom_dir = "overrides"
 language = "pl"
 font = false
 
