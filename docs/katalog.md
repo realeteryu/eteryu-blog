@@ -39,7 +39,7 @@ hide:
     
     Utwardzony fork narzędzia do weryfikacji podpisów APK. Pozwala sprawdzić, czy pobrany plik rzeczywiście pochodzi od zaufanego dewelopera, eliminując ryzyko instalacji zmodyfikowanej paczki.
     
-    [➔ Przejdź do repozytorium](https://github.com/RoundSalmon4/AppVerifierBG)
+    [➔ Przejdź do repozytorium](https://codeberg.org/unwanted9855/AppVerifierBG)
 
 -   :material-check-decagram: **Verified Apps**
     
