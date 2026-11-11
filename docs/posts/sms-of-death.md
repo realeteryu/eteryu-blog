@@ -55,7 +55,7 @@ Zgodnie z zasadą minimalizacji ryzyka, oto praktyczne wnioski:
 
 CVE-2026-58882 nie jest wyrafinowanym atakiem. To błąd walidacji, który mógłby zostać wyeliminowany odpowiednio wczesną kontrolą typów. Prawdziwym problemem nie jest jednak sam błąd, a **model dystrybucji łat** i cykl życia systemu. „SMS of Death” przypomina, że w świecie, w którym urządzenie jest naszym głównym interfejsem do rzeczywistości, aktualizacje bezpieczeństwa nie są luksusem. Są higieną.
 
----
+## Przypisy
 
 [^1]: CVE-2026-58882: Android "SMS of Death" Vulnerability. ThaiCERT. [https://www.thaicert.or.th/en/2026/11/02/android-sms-of-death-vulnerability-could-crash-phone-services-through-crafted-messages/](https://www.thaicert.or.th/en/2026/11/02/android-sms-of-death-vulnerability-could-crash-phone-services-through-crafted-messages/)
 
