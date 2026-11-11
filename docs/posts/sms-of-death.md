@@ -33,7 +33,10 @@ Pojedyncza wiadomość powoduje utratę zasięgu na 1-2 sekundy, dopóki proces 
 
 To jest punkt, w którym filozofia `distrust` staje się niezwykle aktualna. Google naprawiło błąd w ramach aktualizacji bezpieczeństwa z października 2026 roku. Poprawka trafiła jednak **wyłącznie do Androida 14, 15, 16 i 17**.
 
-Urządzenia pracujące na Androidzie 12 i 13 – mimo że podatność została na nich z powodzeniem zreprodukowana – **nie otrzymały i najprawdopodobniej nie otrzymają oficjalnej łatki**. Wynika to z cyklu wsparcia: Google oficjalnie zakończyło wsparcie bezpieczeństwa dla tych wersji. Warto dodać niuans: badacz zgłosił błąd 5 maja 2026 roku, a Google wewnętrznie opracowało poprawkę już 15 czerwca. Trafiła ona jednak do publicznej wiadomości dopiero w październiku, co mogło sprawiać wrażenie, że zgłoszenie zostało zignorowane[^4].
+!!! warning "Brak ochrony dla starszych urządzeń"
+    Urządzenia pracujące na Androidzie 12 i 13 – mimo że podatność została na nich z powodzeniem zreprodukowana – **nie otrzymały i najprawdopodobniej nie otrzymają oficjalnej łatki**. Wynika to z cyklu wsparcia: Google oficjalnie zakończyło wsparcie bezpieczeństwa dla tych wersji.
+
+Warto dodać niuans: badacz zgłosił błąd 5 maja 2026 roku, a Google wewnętrznie opracowało poprawkę już 15 czerwca. Trafiła ona jednak do publicznej wiadomości dopiero w październiku, co mogło sprawiać wrażenie, że zgłoszenie zostało zignorowane[^4].
 
 To doskonały przykład na to, dlaczego „domyślne zaufanie” do systemu operacyjnego jest złudzeniem. System może być technicznie szczelny w momencie zakupu, ale po zakończeniu cyklu wsparcia staje się cyfrowym reliktem – podatnym na ataki, na które nikt już nie szuka rozwiązań.
 
@@ -43,8 +46,10 @@ Zgodnie z zasadą minimalizacji ryzyka, oto praktyczne wnioski:
 
 *   **Aktualizuj.** Jeśli korzystasz z Androida 14 lub nowszego, upewnij się, że masz zainstalowaną aktualizację bezpieczeństwa z października lub listopada 2026. W wielu przypadkach wymaga to restartu urządzenia.
 *   **Weryfikuj cykl wsparcia przed zakupem.** Kupując telefon, nie patrz tylko na specyfikację. Sprawdź, jak długo producent gwarantuje aktualizacje bezpieczeństwa. Urządzenie bez wsparcia to potencjalna luka, niezależnie od ceny.
-*   **Wiedz, że na Androidzie 12/13 nie ma prostej rady.** Wyłączenie WAP Push w ustawieniach aplikacji SMS nie zapobiega atakowi, ponieważ podatność jest wykorzystywana na niższym poziomie systemu (`com.android.phone`), zanim wiadomość trafi do aplikacji. Jedynym realnym rozwiązaniem jest aktualizacja do nowszej wersji. Jeśli to niemożliwe, w razie wystąpienia reboot loopa pozostaje ręczne usunięcie zablokowanej wiadomości z kolejki (np. przez ADB) lub użycie narzędzi pomocniczych, takich jak WapGuard[^5].
 *   **Nie licz na „spokój”.** Fakt, że podatność nie jest obecnie masowo wykorzystywana, nie oznacza, że jest bezpieczna. Kod proof-of-concept jest publicznie dostępny, a bariera wejścia dla atakującego jest zerowa – wystarczy znać numer telefonu ofiary.
+
+!!! danger "Uwaga na fałszywe poczucie bezpieczeństwa"
+    Jeśli korzystasz z Androida 12 lub 13, wyłączenie WAP Push w ustawieniach aplikacji SMS **nie zapobiega atakowi**. Podatność jest wykorzystywana na niższym poziomie systemu (`com.android.phone`), zanim wiadomość trafi do aplikacji. Jedynym realnym rozwiązaniem jest aktualizacja systemu. W razie wystąpienia pętli restartów pozostaje ręczne usunięcie zablokowanej wiadomości z kolejki (np. przez ADB) lub użycie narzędzi pomocniczych, takich jak WapGuard[^5].
 
 ## Podsumowanie
 
