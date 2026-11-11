@@ -163,7 +163,7 @@ hide:
     Utwardzony fork Signala. Wspiera UnifiedPush (brak zależności od usług Google/FCM) oraz oferuje dodatkowe szyfrowanie lokalnej bazy danych.
     
     !!! warning "Brak aktualizacji od lipca 2026"
-        Ostatnie stabilne wydanie (v8.19.2-4) ukazało się 31 lipca 2026 roku. Od tego czasu w oficjalnym Signal załatano m.in. lukę bezpieczeństwa, w której audio mogło być transmitowane po zakończeniu połączenia. Molly pozostaje na te błędy podatna do czasu wchłonięcia zmian z upstreamu. **Według nieoficjalnych informacji z forum Kuketz deweloper pracuje nad aktualizacją, jednak nie ma oficjalnego potwierdzenia ani daty wydania.** Jeśli priorytetem jest dla Ciebie bezpieczeństwo, rozważ alternatywę **Parakeet**, która wdraża poprawki bezpieczeństwa z Signala na bazie kodu Molly.
+        Ostatnie stabilne wydanie (v8.19.2-4) ukazało się 31 lipca 2026 roku. Od tego czasu w oficjalnym Signal załatano m.in. lukę bezpieczeństwa, w której audio mogło być transmitowane po zakończeniu połączenia. Molly pozostaje na te błędy podatna do czasu wchłonięcia zmian z upstreamu. **Według nieoficjalnych informacji deweloper pracuje nad aktualizacją, jednak nie ma oficjalnego potwierdzenia ani daty wydania.** Jeśli priorytetem jest dla Ciebie bezpieczeństwo, rozważ dojrzałą alternatywę **Signal-FOSS** (TwinHelix) – regularnie aktualizowany, odgooglowany klient Signala. Jeśli chcesz pozostać na Molly, możesz tymczasowo wesprzeć się forkiem **Parakeet**, który wdraża poprawki bezpieczeństwa z Signala na bazie kodu Molly.
     
     [➔ Przejdź do repozytorium](https://github.com/mollyim/mollyim-android)
 
