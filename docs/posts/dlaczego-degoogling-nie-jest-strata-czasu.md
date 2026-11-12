@@ -21,6 +21,9 @@ Zanim zaczniesz cokolwiek zmieniać, zadaj sobie pytanie z filozofii *threat mod
 -   Jeśli Twoim celem jest ograniczenie profilowania behawioralnego i reklam, warto zacząć od przeglądarki i systemowego DNS.
 -   Jeśli obawiasz się masowej inwigilacji lub wycieku wrażliwych danych, potrzebujesz głębszej izolacji systemu.
 
+!!! info "Bezpieczeństwo a de-googling"
+    Warto o tym pamiętać: nawet twórcy zaawansowanych systemów, jak GrapheneOS, otwarcie podkreślają, że ich głównym celem jest **bezpieczeństwo**, a nie de-googling jako taki. Pozbycie się usług Google to często skutek uboczny dbania o prywatność i kontrolę, a nie ślepa ideologia.
+
 Bez zdefiniowania zagrożeń, proces ten szybko zamieni się w tzw. **teatr prywatności** (privacy theater) – pozorowanie bezpieczeństwa bez realnego zysku. A co gorsza, jeśli nowy setup będzie zbyt niewygodny, prędzej czy później z niego zrezygnujesz.
 
 !!! warning "Pułapka innego ekosystemu"
@@ -85,7 +88,10 @@ Wokół tematu odzyskiwania prywatności narosło wiele mitów. Najczęstszym po
 
 Próba natychmiastowego usunięcia każdego konta, porzucenia map, przejścia na telefon bez wsparcia dla aplikacji bankowych i odcięcia się od wszystkich usług zazwyczaj kończy się cyfrowym wypaleniem po dwóch tygodniach. To naturalne – nowoczesna infrastruktura cyfrowa jest zbudowana wokół wygody wielkich korporacji.
 
-De-googling nie jest jednak wyścigiem na 100%. **Nawet częściowe ograniczenie cyfrowego śledzenia** (poprzez zmianę DNS, izolację aplikacji czy rezygnację z przeglądarki Chrome) **znacząco zmniejsza ilość danych** przekazywanych do profilu behawioralnego. Nie musisz żyć w cyfrowej jaskini, żeby odzyskać spokój – wystarczy, że przestaniesz ułatwiać korporacjom profilowanie każdego swojego kroku.
+!!! danger "Negatywny nihilizm w mediach"
+    W środowiskach dbających o prywatność na tego typu artykuły (twierdzące, że „to strata czasu, bo i tak nie ukryjesz się przed Googlem”) mówi się zjawisko **„negatywnego nihilizmu”**. Polega on na tym, że zamiast promować małe, realne kroki, autorzy zniechęcają czytelników do jakiegokolwiek działania. To błąd logiczny: fakt, że nie da się być w 100% anonimowym, nie oznacza, że nie warto ograniczać zbierania danych.
+
+De-googling nie jest wyścigiem na 100%. **Nawet częściowe ograniczenie cyfrowego śledzenia** (poprzez zmianę DNS, izolację aplikacji czy rezygnację z przeglądarki Chrome) **znacząco zmniejsza ilość danych** przekazywanych do profilu behawioralnego. Nie musisz żyć w cyfrowej jaskini, żeby odzyskać spokój – wystarczy, że przestaniesz ułatwiać korporacjom profilowanie każdego swojego kroku.
 
 ## Czego unikać? (Anty-wzorce)
 
