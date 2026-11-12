@@ -21,6 +21,7 @@ variant = "modern"
 custom_dir = "overrides"
 language = "pl"
 font = false
+favicon = "assets/favicon.svg"
 
 features = [
     "announce.dismiss",
