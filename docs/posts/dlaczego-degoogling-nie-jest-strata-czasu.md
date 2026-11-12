@@ -78,7 +78,7 @@ Wokół tematu odzyskiwania prywatności narosło wiele mitów. Najczęstszym po
 
 Próba natychmiastowego usunięcia każdego konta, porzucenia map, przejścia na telefon bez wsparcia dla aplikacji bankowych i odcięcia się od wszystkich usług zazwyczaj kończy się cyfrowym wypaleniem po dwóch tygodniach. To naturalne – nowoczesna infrastruktura cyfrowa jest zbudowana wokół wygody wielkich korporacji.
 
-De-googling nie jest jednak wyścigiem na 100%. **Nawet ograniczenie cyfrowego śledzenia o 40–50%** (poprzez zmianę DNS, izolację aplikacji czy rezygnację z przeglądarki Chrome) drastycznie zmniejsza Twój cyfrowy profil behawioralny. Nie musisz żyć w cyfrowej jaskini, żeby odzyskać spokój – wystarczy, że przestaniesz ułatwiać korporacjom profilowanie każdego swojego kroku.
+De-googling nie jest jednak wyścigiem na 100%. **Nawet częściowe ograniczenie cyfrowego śledzenia** (poprzez zmianę DNS, izolację aplikacji czy rezygnację z przeglądarki Chrome) **znacząco zmniejsza ilość danych** przekazywanych do profilu behawioralnego. Nie musisz żyć w cyfrowej jaskini, żeby odzyskać spokój – wystarczy, że przestaniesz ułatwiać korporacjom profilowanie każdego swojego kroku.
 
 ## Czego unikać? (Anty-wzorce)
 
