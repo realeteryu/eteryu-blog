@@ -34,9 +34,9 @@ Tor umożliwia dostęp do ukrytych usług (adresów .onion), które nie są inde
 ### 1. Wydajność: to nie jest „nieco wolniej”
 To najpoważniejszy koszt. Ruch Tora jest wielokrotnie przekierowywany przez losowe węzły na całym świecie. W praktyce przepustowość spada drastycznie:
 
-- **Opóźnienia**: Dodatkowe opóźnienie wynosi zazwyczaj od 250 do 400 milisekund [^3].
-- **Przepustowość**: W zależności od warunków, może spaść do zaledwie **0,5–2 Mbps**, a w szczytowych momentach nawet niżej [^4].
-- **Spowolnienie**: W porównaniu do zwykłego przeglądania, Tor może być **od 3 do 10 razy wolniejszy**.
+-   **Opóźnienia**: Dodatkowe opóźnienie wynosi zazwyczaj od 250 do 400 milisekund [^3].
+-   **Przepustowość**: W zależności od warunków, może spaść do zaledwie **0,5–2 Mbps**, a w szczytowych momentach nawet niżej [^4].
+-   **Spowolnienie**: W porównaniu do zwykłego przeglądania, Tor może być **od 3 do 10 razy wolniejszy**.
 
 Oznacza to, że oglądanie filmów w wysokiej rozdzielczości, czy korzystanie z ciężkich aplikacji webowych, jest praktycznie niemożliwe. Pobieranie dużych plików przez sieć Tor (zwłaszcza torrentów P2P) jest surowo zabronione i obciąża wolontariuszy, którzy utrzymują sieć.
 
@@ -53,8 +53,8 @@ To kluczowy szczegół techniczny, o którym zapominają popularnonaukowe wpisy.
     W październiku 2026 roku badacze ujawnili skoordynowany atak, w którym **przejęto około 333 węzłów wyjściowych Tora (około 10% wszystkich)**. Wykorzystano je do przechwytywania ruchu SSH, kradzieży danych logowania i prób instalacji złośliwego oprogramowania [^6]. Anonimowość na poziomie sieci nie chroni Twoich danych, jeśli końcowa transmisja jest otwarta.
 
 ### 3. Ograniczenia na urządzeniach mobilnych
-- **iOS**: Tor Browser nie jest dostępny na iOS. Apple wymusza korzystanie z silnika WebKit, co uniemożliwia przeglądarce Onion Browser zapewnienie takich samych zabezpieczeń prywatności jak na desktopie [^7].
-- **Android**: Tor Browser na Androida działa natywnie, ale **nie pozwala na przekierowywanie ruchu z innych aplikacji** przez sieć Tor. Do tego celu potrzebne są osobne narzędzia, takie jak Orbot [^8].
+-   **iOS**: Tor Browser nie jest dostępny na iOS. Apple wymusza korzystanie z silnika WebKit, co uniemożliwia przeglądarce Onion Browser zapewnienie takich samych zabezpieczeń prywatności jak na desktopie [^7].
+-   **Android**: Tor Browser na Androida działa natywnie, ale **nie pozwala na przekierowywanie ruchu z innych aplikacji** przez sieć Tor. Do tego celu potrzebne są osobne narzędzia, takie jak Orbot [^8].
 
 ### 4. Krucha równowaga i podatność na błędy
 Anonimowość w Torze jest jak domek z kart. Jeśli zmienisz rozmiar okna (np. na pełny ekran), zainstalujesz dodatkowe rozszerzenia (poza wbudowanym NoScript) lub zmienisz konfigurację, natychmiast **wyróżnisz się z tłumu**. Zniweczysz cały wysiłek sieci włożony w Twoją anonimowość.
@@ -70,18 +70,21 @@ Anonimowość w Torze jest jak domek z kart. Jeśli zmienisz rozmiar okna (np. n
 To pytanie sprowadza się do Twojego modelu zagrożeń. Nie ma jednej idealnej odpowiedzi.
 
 ### Kiedy Tor jest konieczny?
-- **Ukrycie tożsamości przed samą stroną docelową**: Jesteś dziennikarzem śledczym, działaczem w państwie autorytarnym lub zgłaszasz nadużycia korporacyjne, narażając się na odwet.
-- **Omijanie zaawansowanej cenzury**: Potrzebujesz dostępu do informacji w kraju, w którym rząd blokuje ruch Tora. Mostki (bridges) lub Snowflake mogą Ci w tym pomóc.
-- **Dostęp do usług .onion**: Potrzebujesz skorzystać z konkretnej usługi ukrytej, takiej jak SecureDrop.
+
+-   **Ukrycie tożsamości przed samą stroną docelową**: Jesteś dziennikarzem śledczym, działaczem w państwie autorytarnym lub zgłaszasz nadużycia korporacyjne, narażając się na odwet.
+-   **Omijanie zaawansowanej cenzury**: Potrzebujesz dostępu do informacji w kraju, w którym rząd blokuje ruch Tora. Mostki (bridges) lub Snowflake mogą Ci w tym pomóc.
+-   **Dostęp do usług .onion**: Potrzebujesz skorzystać z konkretnej usługi ukrytej, takiej jak SecureDrop.
 
 ### Kiedy VPN jest lepszy?
-- **Codzienne przeglądanie**: Chcesz ukryć swoją aktywność przed ISP i chronić się w publicznych sieciach Wi-Fi, ale zależy Ci na prędkości.
-- **Korzystanie z bankowości i logowanie na konta**: Logowanie się na swoje osobiste konta przez Tora mija się z celem – dobrowolnie oddajesz anonimowość, którą on daje.
-- **Streaming i duże pliki**: Tor jest zbyt wolny do obsługi wideo w wysokiej jakości lub pobierania dużych plików.
+
+-   **Codzienne przeglądanie**: Chcesz ukryć swoją aktywność przed ISP i chronić się w publicznych sieciach Wi-Fi, ale zależy Ci na prędkości.
+-   **Korzystanie z bankowości i logowanie na konta**: Logowanie się na swoje osobiste konta przez Tora mija się z celem – dobrowolnie oddajesz anonimowość, którą on daje.
+-   **Streaming i duże pliki**: Tor jest zbyt wolny do obsługi wideo w wysokiej jakości lub pobierania dużych plików.
 
 ## Bezpieczeństwo w Torze na Androidzie (np. GrapheneOS)
 
 Jeśli już zdecydujesz się na Tora na telefonie, pamiętaj o absolutnych podstawach:
+
 1.  **Pobieraj tylko z oficjalnych źródeł**: Najbezpieczniejszą opcją jest oficjalna strona Tor Project lub menedżer **Obtainium**, który pobiera pliki bezpośrednio od dewelopera.
 2.  **F-Droid tylko dla świadomych**: Jeśli już korzystasz z F-Droida, Tor Browser jest dostępny w repozytorium Guardian Project. Pamiętaj jednak, że F-Droid słynie z opóźnień w aktualizacjach, co w przypadku przeglądarki jest poważnym ryzykiem bezpieczeństwa. Wybierz tę drogę tylko, jeśli w pełni akceptujesz ten kompromis.
 3.  **Nie loguj się na swoje konta**: Tor ma sens tylko wtedy, gdy jesteś „anonimowym szumem”.
