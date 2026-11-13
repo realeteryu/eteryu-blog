@@ -1,6 +1,6 @@
 ---
 title: "Dlaczego de-googling nie jest stratą czasu"
-date: 2026-11-13
+date: 2026-11-12
 authors:
   - eteryu
 description: "Pragmatyczne podejście do odzyskiwania kontroli nad danymi na telefonie. Bez ideologii, bez teatru prywatności, w oparciu o model zagrożeń."
