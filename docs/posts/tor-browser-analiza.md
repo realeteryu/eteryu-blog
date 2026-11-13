@@ -4,6 +4,7 @@ date: 2026-11-13
 authors:
   - eteryu
 description: "Bez lukru o Tor Browserze. Omówienie realnych korzyści (anonimowość, odporność na cenzurę) i kosztów (wydajność, ryzyko węzłów wyjściowych) oraz wskazówki, jak wybrać między Tor a VPN w zależności od modelu zagrożeń."
+image: assets/og/tor-browser-og.png
 ---
 
 Tor Browser to bez wątpienia jedno z najważniejszych narzędzi w arsenale obrońców prywatności. Routing cebulowy i sieć tysięcy wolontariuszy na całym świecie robią robotę, której żaden komercyjny VPN nie jest w stanie zapewnić. Często rozprawiamy się ze stereotypem Tora jako narzędzia służącego wyłącznie do nielegalnych działań w Dark Webie. Zejście z tego stereotypu jest kluczowe, ponieważ Tor jest nieocenionym wsparciem dla dziennikarzy, aktywistów czy dysydentów.
