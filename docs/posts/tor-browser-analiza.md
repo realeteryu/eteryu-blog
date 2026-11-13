@@ -8,11 +8,11 @@ description: "Bez lukru o Tor Browserze. Omówienie realnych korzyści (anonimow
 
 Tor Browser to bez wątpienia jedno z najważniejszych narzędzi w arsenale obrońców prywatności. Routing cebulowy i sieć tysięcy wolontariuszy na całym świecie robią robotę, której żaden komercyjny VPN nie jest w stanie zapewnić. Często rozprawiamy się ze stereotypem Tora jako narzędzia służącego wyłącznie do nielegalnych działań w Dark Webie. Zejście z tego stereotypu jest kluczowe, ponieważ Tor jest nieocenionym wsparciem dla dziennikarzy, aktywistów czy dysydentów.
 
+<!-- more -->
+
 Warto na wstępie poczynić jedno kluczowe rozróżnienie. **Tor** to nazwa samej sieci (protokołu routingu cebulowego), natomiast **Tor Browser** to konkretna aplikacja – zmodyfikowana wersja Firefoksa, zaprojektowana jako brama do tej sieci dla użytkowników końcowych. W tym artykule skupiam się na przeglądarce, ale pamiętaj, że jej działanie jest nierozerwalnie związane z siecią.
 
 Niestety, w dyskusji o Torze łatwo wpaść w drugą skrajność: traktowanie go jako uniwersalnej przeglądarki, którą „powinien używać każdy”. Prawda jest znacznie bardziej zniuansowana. Tor Browser to wyspecjalizowane narzędzie do **maksymalnej anonimowości**, a nie do codziennego, wygodnego przeglądania. Poniżej przedstawiam obie strony medalu, abyś mógł samodzielnie ocenić, czy jest to narzędzie dla Ciebie.
-
-<!-- more -->
 
 ## Zalety: Co Tor Browser robi najlepiej?
 
